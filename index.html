@@ -14,6 +14,65 @@
     <title>Frontend Mentor | Art gallery website</title>
   </head>
   <body>
+    <header class="relative mx-auto max-w-[1440px]">
+      <div
+        class="absolute left-0 top-0 z-20 hidden h-[800px] w-[450px] overflow-hidden bg-#151515 lg:block"
+      >
+        <img
+          src="./assets/logo-light.svg"
+          alt="logo"
+          class="absolute left-[167px] top-[190px] hidden w-full lg:block"
+        />
+      </div>
+
+      <!-- image hero -->
+      <div
+        class="bg-image-hero-mobile md:bg-image-hero-tablet lg:bg-image-hero-desktop h-[240px] bg-cover bg-center bg-no-repeat md:h-[700px] md:max-w-[437px] lg:relative lg:left-[450px] lg:h-[800px] lg:max-w-[540px]"
+      ></div>
+      <!-- image hero -->
+
+      <!-- hero content -->
+      <div
+        class="right-10 top-[145px] max-w-[1110px] md:absolute lg:top-[190px] lg:z-10 xl:right-[163px] xl:w-full"
+      >
+        <div
+          class="flex flex-col gap-8 px-4 pt-8 md:gap-12 md:p-0 lg:flex-row lg:justify-between xl:gap-0"
+        >
+          <h1 class="">
+            <img
+              src="./assets/logo-dark.svg"
+              alt="logo"
+              class="w-[343px] md:w-[339px] lg:w-[450px]"
+            />
+          </h1>
+          <div class="flex flex-col gap-8 md:gap-12 lg:gap-16">
+            <p
+              class="font-outfit text-lg leading-7 text-[#444] md:max-w-[339px] lg:max-w-[350px] lg:text-[22px] lg:leading-8"
+            >
+              The arts in the collection of the Modern Art Gallery all started
+              from a spark of inspiration. Will these pieces inspire you? Visit
+              us and find out.
+            </p>
+            <a href="./location.html" class="group flex h-[72px] w-[260px]">
+              <div
+                class="flex h-full w-[204px] items-center justify-center bg-#151515 font-big-shoulders-display text-xl font-extrabold leading-none tracking-[3.636px] text-white transition-colors group-hover:bg-#D5966C"
+              >
+                OUR LOCATION
+              </div>
+              <div
+                class="flex h-full w-14 items-center justify-center bg-#D5966C transition-colors group-hover:bg-#151515"
+              >
+                <img
+                  src="./assets/icon-arrow-right.svg"
+                  alt="icon arrow right"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- hero content -->
+    </header>
     <main class="bg-white">
       <div
         class="mx-auto flex max-w-[1110px] flex-col gap-8 px-4 py-[120px] md:gap-[11px] md:px-10 lg:gap-[30px] xl:px-0"
@@ -22,7 +81,7 @@
           class="flex flex-col gap-4 md:flex-row-reverse md:items-center md:justify-between md:gap-[67px]"
         >
           <div
-            class="bg-image-grid-1-mobile md:bg-image-grid-1-tablet lg:bg-image-grid-1-desktop h-[320px] w-full bg-cover bg-center bg-no-repeat md:h-[400px]"
+            class="h-[320px] w-full bg-image-grid-1-mobile bg-cover bg-center bg-no-repeat md:h-[400px] md:bg-image-grid-1-tablet lg:bg-image-grid-1-desktop"
           ></div>
 
           <div class="md:max-w-[223px] lg:max-w-[350px]">
@@ -45,10 +104,10 @@
           class="grid grid-cols-1 gap-4 md:grid-cols-[minmax(398px,_1fr)_1fr] md:gap-[11px] lg:grid-cols-[minmax(635px,_1fr)_1fr] lg:gap-[30px]"
         >
           <div
-            class="bg-image-grid-2-mobile md:bg-image-grid-2-tablet lg:bg-image-grid-2-desktop h-full min-h-[480px] bg-cover bg-center bg-no-repeat md:row-span-2 md:min-h-[720px]"
+            class="h-full min-h-[480px] bg-image-grid-2-mobile bg-cover bg-center bg-no-repeat md:row-span-2 md:min-h-[720px] md:bg-image-grid-2-tablet lg:bg-image-grid-2-desktop"
           ></div>
           <div
-            class="bg-image-grid-3-mobile md:bg-image-grid-3-tablet lg:bg-image-grid-3-desktop h-full min-h-[200px] w-full bg-cover bg-center bg-no-repeat md:min-h-[313px]"
+            class="h-full min-h-[200px] w-full bg-image-grid-3-mobile bg-cover bg-center bg-no-repeat md:min-h-[313px] md:bg-image-grid-3-tablet lg:bg-image-grid-3-desktop"
           ></div>
           <div
             class="bg-#151515 px-6 py-12 text-white md:col-start-2 md:px-7 md:py-[85px]"
